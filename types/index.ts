@@ -8,7 +8,6 @@ export interface SymbolTableEntry {
   lexeme: string;
   token: string;
   position: number;
-  [key: string]: string | number; // Add index signature
 }
 
 export interface ParseTreeNode {
@@ -17,18 +16,18 @@ export interface ParseTreeNode {
   children?: ParseTreeNode[];
 }
 
+export interface ParseError {
+  type: string;
+  message: string;
+}
+
 export interface ParseResult {
   success: boolean;
   tokens: Token[];
   symbol_table: SymbolTableEntry[];
   parse_tree: ParseTreeNode | null;
+  derivation: string[];
   message: string;
+  errors: ParseError[];
   error?: string;
-}
-
-export interface TestCase {
-  id: string;
-  expression: string;
-  description: string;
-  expected: "valid" | "invalid";
 }
