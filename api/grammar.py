@@ -1,25 +1,47 @@
-# Grammar Definition
+# Grammar Definition - Extended
 # E -> TE'
-# E' -> +TE' | ε
+# E' -> +TE' | -TE' | ε
 # T -> FT'
-# T' -> *FT' | ε
-# F -> (E) | id
-# id -> 0-9 | a-z | A-Z | multi-digit numbers
+# T' -> *FT' | /FT' | %FT' | ε
+# F -> P^F | P
+# P -> (E) | func(E) | id | number
+# func -> sin | cos | tan | log | ln | sqrt | abs | exp
+# id -> a-z | A-Z | identifiers
+# number -> 0-9 | decimals
 
 GRAMMAR = {
     'E': ['TE\''],
-    'E\'': ['+TE\'', 'ε'],
+    'E\'': ['+TE\'', '-TE\'', 'ε'],
     'T': ['FT\''],
-    'T\'': ['*FT\'', 'ε'],
-    'F': ['(E)', 'id'],
-    'id': ['0-9', 'a-z', 'A-Z', 'multi-digit']
+    'T\'': ['*FT\'', '/FT\'', '%FT\'', 'ε'],
+    'F': ['P^F', 'P'],
+    'P': ['(E)', 'func(E)', 'id', 'number'],
+    'func': ['sin', 'cos', 'tan', 'log', 'ln', 'sqrt', 'abs', 'exp'],
+    'id': ['a-z', 'A-Z', 'identifiers'],
+    'number': ['0-9', 'decimals']
 }
 
-# Token types
+# Token types with descriptions
 TOKEN_TYPES = {
-    'ID': 'Identifier',
-    'PLUS': 'Addition Operator',
-    'MULTIPLY': 'Multiplication Operator',
-    'LPAREN': 'Left Parenthesis',
-    'RPAREN': 'Right Parenthesis'
+    'ID': 'Identifier/Number',
+    'NUMBER': 'Number',
+    'PLUS': '+ - Addition',
+    'MINUS': '- - Subtraction',
+    'MULTIPLY': '* - Multiplication',
+    'DIVIDE': '/ - Division',
+    'MODULO': '% - Modulo',
+    'POWER': '^ - Power/Exponentiation',
+    'LPAREN': '( - Left Parenthesis',
+    'RPAREN': ') - Right Parenthesis',
+    'EQUALS': '= - Equals',
+    'SEMICOLON': '; - Semicolon',
+    'COMMA': ', - Comma',
+    'SIN': 'sin - Sine function',
+    'COS': 'cos - Cosine function',
+    'TAN': 'tan - Tangent function',
+    'LOG': 'log - Logarithm base 10',
+    'LN': 'ln - Natural logarithm',
+    'SQRT': 'sqrt - Square root',
+    'ABS': 'abs - Absolute value',
+    'EXP': 'exp - Exponential e^x'
 }
