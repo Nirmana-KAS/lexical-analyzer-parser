@@ -2,7 +2,7 @@
   "framework": "nextjs",
   "functions": {
     "api/**/*.py": {
-      "runtime": "python3.9"
+      "runtime": "python3.4"
     }
   }
 }
