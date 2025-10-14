@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from api.lexer import tokenize
-from api.parser import parse_tokens
+from lexer import tokenize
+from parser import parse_tokens
 import traceback
 
 app = Flask(__name__)
@@ -17,14 +17,17 @@ def parse_expression():
         if not input_string:
             return jsonify({
                 'success': False,
-                'error': 'Empty input string'
+                'error': 'Empty input string',
+                'errors': [{'type': 'Empty Input', 'message': 'Please enter an expression'}]
             }), 400
         
+        # Tokenize
         lexer_result = tokenize(input_string)
         tokens = lexer_result['tokens']
         symbol_table = lexer_result['symbol_table']
-<<<<<<< HEAD
+        lexer_errors = lexer_result.get('errors', [])
         
+        # If no tokens, return error
         if not tokens:
             return jsonify({
                 'success': False,
@@ -35,9 +38,8 @@ def parse_expression():
                 'message': 'No valid tokens found',
                 'errors': [{'type': 'Lexical Error', 'message': 'No valid tokens in input'}]
             })
-=======
->>>>>>> parent of 985668b (Add extended grammar support, derivation steps, PDF export, and UI improvements)
         
+        # Parse
         parse_result = parse_tokens(tokens)
         
         return jsonify({
@@ -45,13 +47,16 @@ def parse_expression():
             'tokens': tokens,
             'symbol_table': symbol_table,
             'parse_tree': parse_result['tree'],
-            'message': parse_result['message']
+            'derivation': parse_result.get('derivation', []),
+            'message': parse_result['message'],
+            'errors': parse_result.get('errors', [])
         })
     
     except Exception as e:
         return jsonify({
             'success': False,
             'error': str(e),
+            'errors': [{'type': 'Server Error', 'message': str(e)}],
             'trace': traceback.format_exc()
         }), 500
 
@@ -62,3 +67,6 @@ def health_check():
         'status': 'ok',
         'message': 'Lexical Analyzer & Parser API is running'
     })
+
+if __name__ == '__main__':
+    app.run(debug=True, port=5000)
