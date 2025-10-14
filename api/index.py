@@ -17,13 +17,13 @@ def parse_expression():
         if not input_string:
             return jsonify({
                 'success': False,
-                'error': 'Empty input string',
-                'errors': [{'type': 'Empty Input', 'message': 'Please enter an expression'}]
+                'error': 'Empty input string'
             }), 400
         
         lexer_result = tokenize(input_string)
         tokens = lexer_result['tokens']
         symbol_table = lexer_result['symbol_table']
+<<<<<<< HEAD
         
         if not tokens:
             return jsonify({
@@ -35,6 +35,8 @@ def parse_expression():
                 'message': 'No valid tokens found',
                 'errors': [{'type': 'Lexical Error', 'message': 'No valid tokens in input'}]
             })
+=======
+>>>>>>> parent of 985668b (Add extended grammar support, derivation steps, PDF export, and UI improvements)
         
         parse_result = parse_tokens(tokens)
         
@@ -43,16 +45,13 @@ def parse_expression():
             'tokens': tokens,
             'symbol_table': symbol_table,
             'parse_tree': parse_result['tree'],
-            'derivation': parse_result.get('derivation', []),
-            'message': parse_result['message'],
-            'errors': parse_result.get('errors', [])
+            'message': parse_result['message']
         })
     
     except Exception as e:
         return jsonify({
             'success': False,
             'error': str(e),
-            'errors': [{'type': 'Server Error', 'message': str(e)}],
             'trace': traceback.format_exc()
         }), 500
 
