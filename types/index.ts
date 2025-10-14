@@ -34,10 +34,8 @@ export interface ParseResult {
 
 export interface TestCase {
   id: number;
-  name: string;
-  input: string;
-  expected: {
-    success: boolean;
-    message: string;
-  };
+  expression: string;
+  description: string;
+  expected: string;
 }
+
