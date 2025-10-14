@@ -31,3 +31,13 @@ export interface ParseResult {
   errors: ParseError[];
   error?: string;
 }
+
+export interface TestCase {
+  id: number;
+  name: string;
+  input: string;
+  expected: {
+    success: boolean;
+    message: string;
+  };
+}
