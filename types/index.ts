@@ -31,3 +31,11 @@ export interface ParseResult {
   errors: ParseError[];
   error?: string;
 }
+
+// ADD THIS NEW INTERFACE
+export interface TestCase {
+  id: string;
+  expression: string;
+  description: string;
+  expected: 'valid' | 'invalid';
+}
