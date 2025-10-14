@@ -5,28 +5,11 @@ from parser import parse_tokens
 import traceback
 
 app = Flask(__name__)
+CORS(app)
 
-# Configure CORS for production
-CORS(app, resources={
-    r"/api/*": {
-        "origins": [
-            "http://localhost:3000",
-            "https://lexical-analyzer-parser-pied.vercel.app",
-            "https://*.vercel.app"
-        ],
-        "methods": ["GET", "POST", "OPTIONS"],
-        "allow_headers": ["Content-Type"]
-    }
-})
-
-@app.route('/api/parse', methods=['POST', 'OPTIONS'])
+@app.route('/api/parse', methods=['POST'])
 def parse_expression():
     """Main API endpoint for parsing expressions"""
-    
-    # Handle preflight OPTIONS request
-    if request.method == 'OPTIONS':
-        return jsonify({'status': 'ok'}), 200
-    
     try:
         data = request.get_json()
         input_string = data.get('expression', '')
@@ -77,23 +60,13 @@ def parse_expression():
             'trace': traceback.format_exc()
         }), 500
 
-@app.route('/api/health', methods=['GET', 'OPTIONS'])
+@app.route('/api/health', methods=['GET'])
 def health_check():
     """Health check endpoint"""
-    
-    # Handle preflight OPTIONS request
-    if request.method == 'OPTIONS':
-        return jsonify({'status': 'ok'}), 200
-    
     return jsonify({
         'status': 'ok',
         'message': 'Lexical Analyzer & Parser API is running'
     })
 
-# For Vercel serverless - CRITICAL
-def handler(request):
-    with app.request_context(request.environ):
-        return app.full_dispatch_request()
-
-# Export for Vercel
-app = app
+if __name__ == '__main__':
+    app.run(debug=True, port=5000)
