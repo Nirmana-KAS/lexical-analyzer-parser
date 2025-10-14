@@ -68,5 +68,8 @@ def health_check():
         'message': 'Lexical Analyzer & Parser API is running'
     })
 
+# For Vercel serverless
+app = app
+
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
