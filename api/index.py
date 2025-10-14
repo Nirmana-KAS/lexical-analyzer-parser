@@ -3,7 +3,6 @@ from flask_cors import CORS
 from lexer import tokenize
 from parser import parse_tokens
 import traceback
-import os
 
 app = Flask(__name__)
 CORS(app)
@@ -22,13 +21,10 @@ def parse_expression():
                 'errors': [{'type': 'Empty Input', 'message': 'Please enter an expression'}]
             }), 400
         
-        # Tokenize
         lexer_result = tokenize(input_string)
         tokens = lexer_result['tokens']
         symbol_table = lexer_result['symbol_table']
-        lexer_errors = lexer_result.get('errors', [])
         
-        # If no tokens, return error
         if not tokens:
             return jsonify({
                 'success': False,
@@ -40,7 +36,6 @@ def parse_expression():
                 'errors': [{'type': 'Lexical Error', 'message': 'No valid tokens in input'}]
             })
         
-        # Parse
         parse_result = parse_tokens(tokens)
         
         return jsonify({
@@ -69,6 +64,4 @@ def health_check():
         'message': 'Lexical Analyzer & Parser API is running'
     })
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
-
+# NO if __name__ == '__main__' block for Vercel!
