@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from lexer import tokenize
-from parser import parse_tokens
+from api.lexer import tokenize
+from api.parser import parse_tokens
 import traceback
 
 app = Flask(__name__)
@@ -63,5 +63,3 @@ def health_check():
         'status': 'ok',
         'message': 'Lexical Analyzer & Parser API is running'
     })
-
-# NO if __name__ == '__main__' block for Vercel!
