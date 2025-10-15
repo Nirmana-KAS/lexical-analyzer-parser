@@ -75,8 +75,8 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen p-4 md:p-6 lg:p-8">
-      <div className="max-w-7xl mx-auto space-y-8">
+  <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 py-12">
+    <div className="max-w-5xl mx-auto bg-card/80 dark:bg-card/50 backdrop-blur-lg rounded-2xl p-8 space-y-12 shadow-xl">
         {/* Header Section */}
         <header className="text-center space-y-4 fade-in-up">
           <div className="flex items-center justify-center gap-3 mb-4">
