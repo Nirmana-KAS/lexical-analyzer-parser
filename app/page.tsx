@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { parseExpression } from '@/lib/api';
 import { ParseResult } from '@/types';
 import { exportParseTreeToPDF, exportSymbolTableToPDF } from '@/lib/pdfExport';
+import ResponsiveBot from '@/components/ResponsiveBot';
 
 import CodeEditor from '@/components/CodeEditor';
 import TokenDisplay from '@/components/TokenDisplay';
@@ -70,6 +71,8 @@ export default function Home() {
           </p>
         </header>
 
+        <ResponsiveBot />
+             
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {/* Left Column - Input & Grammar */}
           <div className="lg:col-span-1 space-y-6">
