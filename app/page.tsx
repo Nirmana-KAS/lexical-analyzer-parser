@@ -4,7 +4,6 @@ import { useState } from 'react';
 import { parseExpression } from '@/lib/api';
 import { ParseResult } from '@/types';
 import { exportParseTreeToPDF, exportSymbolTableToPDF } from '@/lib/pdfExport';
-import SplineBot from '@/components/SplineBot';
 
 
 import CodeEditor from '@/components/CodeEditor';
@@ -63,10 +62,6 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 p-4 md:p-8">
       <div className="max-w-7xl mx-auto">
-        {/* 3D Spline Bot */}
-          <div className="mb-8">
-            <SplineBot />
-          </div>
         <header className="text-center mb-8">
           <h1 className="text-4xl font-bold text-purple-600 dark:text-purple-400 mb-2">
             Lexical Analyzer & Parser
@@ -221,3 +216,5 @@ export default function Home() {
     </div>
   );
 }
+
+
