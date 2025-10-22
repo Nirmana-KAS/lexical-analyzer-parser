@@ -22,27 +22,27 @@
 
 ## 📖 Overview
 
-**Full-stack web application** implementing **lexical analysis** and **parsing** for arithmetic expressions using **recursive descent parsing** algorithm. Built for **PLCD (Programming Language Concepts and Design)** assignment with **modern UI, animations, and real-time visualization**.[attached_file:5]
+**Full-stack web application** implementing **lexical analysis** and **parsing** for arithmetic expressions using **recursive descent parsing** algorithm. Built for **PLCD (Programming Language Concepts and Design)** assignment with **modern UI, animations, and real-time visualization**.
 
 ### 🎯 What It Does
 
-- **Tokenizes** input expressions into lexemes (IDs, operators, numbers, functions)[attached_file:2]
-- **Parses** syntax against context-free grammar rules (CFG)[attached_file:5]
-- **Visualizes** parse trees using **D3.js** interactive graphs[attached_file:6]
-- **Displays** symbol table with token types, values, and scope[attached_file:2]
-- **Shows** step-by-step derivation sequence[attached_file:1]
-- **Exports** results as **PDF** documents[attached_file:4]
+- **Tokenizes** input expressions into lexemes (IDs, operators, numbers, functions)
+- **Parses** syntax against context-free grammar rules (CFG)
+- **Visualizes** parse trees using **D3.js** interactive graphs
+- **Displays** symbol table with token types, values, and scope
+- **Shows** step-by-step derivation sequence
+- **Exports** results as **PDF** documents
 
 ### 🏆 Assignment Requirements Met
 
-✅ Lexical analyzer with token mapping[attached_file:5]
-✅ Parser with top-down parsing[attached_file:5]
-✅ Symbol table implementation[attached_file:5]
-✅ Graphical parse tree visualization[attached_file:5]
-✅ Error handling for invalid inputs[attached_file:5]
-✅ Web-based interface (bonus)[attached_file:5]
-✅ PDF export functionality (bonus)[attached_file:4]
-✅ Test cases with valid/invalid expressions[attached_file:2]
+✅ Lexical analyzer with token mapping
+✅ Parser with top-down parsing
+✅ Symbol table implementation
+✅ Graphical parse tree visualization
+✅ Error handling for invalid inputs
+✅ Web-based interface (bonus)
+✅ PDF export functionality (bonus)
+✅ Test cases with valid/invalid expressions
 
 ---
 
@@ -51,25 +51,25 @@
 ### 🎨 Frontend Features
 
 - ⚡ **Real-time Analysis** - Instant parsing with live feedback
-- 🎭 **Glassmorphism UI** - Modern frosted glass design with blur effects[attached_file:4]
+- 🎭 **Glassmorphism UI** - Modern frosted glass design with blur effects
 - 🌗 **Dark/Light Mode** - System preference detection + manual toggle
-- 📱 **Fully Responsive** - Optimized for mobile, tablet, desktop[attached_file:4]
-- ✨ **Smooth Animations** - Framer Motion for fluid transitions[attached_file:6]
-- 🎨 **Gradient Accents** - Modern color schemes with animated backgrounds[attached_file:1]
-- 📝 **Monaco Editor** - VS Code-style code input[attached_file:1]
-- 🧪 **Test Cases** - Pre-loaded valid/invalid expression examples[attached_file:2]
-- 📊 **Interactive Visualization** - D3.js parse tree with zoom/pan[attached_file:6]
-- 📥 **PDF Export** - One-click download of results[attached_file:4]
+- 📱 **Fully Responsive** - Optimized for mobile, tablet, desktop
+- ✨ **Smooth Animations** - Framer Motion for fluid transitions
+- 🎨 **Gradient Accents** - Modern color schemes with animated backgrounds
+- 📝 **Monaco Editor** - VS Code-style code input
+- 🧪 **Test Cases** - Pre-loaded valid/invalid expression examples
+- 📊 **Interactive Visualization** - D3.js parse tree with zoom/pan
+- 📥 **PDF Export** - One-click download of results
 
 ### 🔧 Backend Features
 
-- 🔤 **PLY Lexer** - Python Lex-Yacc for tokenization[attached_file:2]
-- 🌲 **Recursive Descent Parser** - Top-down parsing algorithm[attached_file:2]
-- 📋 **Symbol Table** - Token tracking with attributes[attached_file:2]
-- 🔄 **Derivation Steps** - Full parsing sequence output[attached_file:1]
-- 🚨 **Error Handling** - Detailed syntax error messages[attached_file:2]
-- 🌐 **CORS Enabled** - Cross-origin requests supported[attached_file:2]
-- ✅ **Health Check** - API monitoring endpoint[attached_file:2]
+- 🔤 **PLY Lexer** - Python Lex-Yacc for tokenization
+- 🌲 **Recursive Descent Parser** - Top-down parsing algorithm
+- 📋 **Symbol Table** - Token tracking with attributes
+- 🔄 **Derivation Steps** - Full parsing sequence output
+- 🚨 **Error Handling** - Detailed syntax error messages
+- 🌐 **CORS Enabled** - Cross-origin requests supported
+- ✅ **Health Check** - API monitoring endpoint
 
 ---
 
@@ -77,9 +77,9 @@
 
 ### 🌐 Live Application
 
-**Frontend URL:** [https://lexical-analyzer-parser-2025.vercel.app](https://lexical-analyzer-parser-pied.vercel.app/)[attached_file:2]
+**Frontend URL:** [https://lexical-analyzer-parser-2025.vercel.app](https://lexical-analyzer-parser-pied.vercel.app/)
 <br>
-**Backend API:** [https://kasnirmana.pythonanywhere.com/api/health](https://kasnirmana.pythonanywhere.com/api/health)[attached_file:2]
+**Backend API:** [https://kasnirmana.pythonanywhere.com/api/health](https://kasnirmana.pythonanywhere.com/api/health)
 
 ### 📸 Screenshots
 
