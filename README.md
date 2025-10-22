@@ -33,13 +33,13 @@
 
 ### 🏆 Assignment Requirements Met
 
-✅ Lexical analyzer with token mapping
-✅ Parser with top-down parsing
-✅ Symbol table implementation
-✅ Graphical parse tree visualization
-✅ Error handling for invalid inputs
-✅ Web-based interface (bonus)
-✅ PDF export functionality (bonus)
+✅ Lexical analyzer with token mapping<br>
+✅ Parser with top-down parsing<br>
+✅ Symbol table implementation<br>
+✅ Graphical parse tree visualization<br>
+✅ Error handling for invalid inputs<br>
+✅ Web-based interface (bonus)<br>
+✅ PDF export functionality (bonus)<br>
 ✅ Test cases with valid/invalid expressions
 
 ---
@@ -99,6 +99,4 @@
 </tr>
 </table>
 </div>
-
-### 🧪 Example Test Cases
 
