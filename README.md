@@ -14,7 +14,7 @@
 
 [Features](#-features) • [Demo](#-demo) • [Tech Stack](#-tech-stack) • [Installation](#-quick-start) • [Usage](#-usage) • [API](#-api-documentation) • [Deployment](#-deployment)
 
-![Lexical Analyzer Demo]<img src="https://github.com/Nirmana-KAS/lexical-analyzer-parser/blob/master/screenshots/lexical-analyzer-parser-HomePage.png" alt="Home Page" />
+[Lexical Analyzer Demo]<img src="https://github.com/Nirmana-KAS/lexical-analyzer-parser/blob/master/screenshots/lexical-analyzer-parser-HomePage.png" alt="Home Page" />
 
 </div>
 
