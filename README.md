@@ -12,8 +12,6 @@
 [![Flask](https://img.shields.io/badge/Flask-3.0-green?style=for-the-badge&logo=flask)](https://flask.palletsprojects.com/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.0-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 
-[Features](#-features) • [Demo](#-demo) • [Tech Stack](#-tech-stack) • [Installation](#-quick-start) • [Usage](#-usage) • [API](#-api-documentation) • [Deployment](#-deployment)
-
 [Lexical Analyzer Demo]<img src="https://github.com/Nirmana-KAS/lexical-analyzer-parser/blob/master/screenshots/lexical-analyzer-parser-HomePage.png" alt="Home Page" />
 
 </div>
