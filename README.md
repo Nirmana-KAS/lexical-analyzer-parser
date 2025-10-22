@@ -14,7 +14,7 @@
 
 [Features](#-features) • [Demo](#-demo) • [Tech Stack](#-tech-stack) • [Installation](#-quick-start) • [Usage](#-usage) • [API](#-api-documentation) • [Deployment](#-deployment)
 
-![Lexical Analyzer Demo](https://via.placeholder.com/1200x600/4F46E5/FFFFFF?text=Lexical+Analyzer+%26+Parser+Demo)
+![Lexical Analyzer Demo](https://lexical-analyzer-parser-pied.vercel.app/)
 
 </div>
 
@@ -77,7 +77,8 @@
 
 ### 🌐 Live Application
 
-**Frontend URL:** [https://lexical-analyzer-parser-2025.vercel.app](https://lexical-analyzer-parser-2025.vercel.app)[attached_file:2]
+**Frontend URL:** [https://lexical-analyzer-parser-2025.vercel.app](https://lexical-analyzer-parser-pied.vercel.app/)[attached_file:2]
+<br>
 **Backend API:** [https://kasnirmana.pythonanywhere.com/api/health](https://kasnirmana.pythonanywhere.com/api/health)[attached_file:2]
 
 ### 📸 Screenshots
