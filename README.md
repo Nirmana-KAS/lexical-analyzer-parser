@@ -87,15 +87,15 @@
 <table>
 <tr>
 <td width="33%">
-<img src="https://via.placeholder.com/400x300/10B981/FFFFFF?text=Main+UI" alt="Main Interface" />
-<p align="center"><b>Main Interface</b></p>
+<img src="https://github.com/Nirmana-KAS/lexical-analyzer-parser/blob/master/screenshots/lexical-analyzer-parser-Tokens.png" alt="Main Interface" />
+<p align="center"><b>Taken Interface</b></p>
 </td>
 <td width="33%">
-<img src="https://via.placeholder.com/400x300/3B82F6/FFFFFF?text=Parse+Tree" alt="Parse Tree" />
+<img src="https://github.com/Nirmana-KAS/lexical-analyzer-parser/blob/master/screenshots/lexical-analyzer-parser-Parse-Tree.png" alt="Parse Tree" />
 <p align="center"><b>Parse Tree Visualization</b></p>
 </td>
 <td width="33%">
-<img src="https://via.placeholder.com/400x300/8B5CF6/FFFFFF?text=Symbol+Table" alt="Symbol Table" />
+<img src="https://github.com/Nirmana-KAS/lexical-analyzer-parser/blob/master/screenshots/lexical-analyzer-parser-SymbleTable.png" alt="Symbol Table" />
 <p align="center"><b>Symbol Table</b></p>
 </td>
 </tr>
