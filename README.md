@@ -4,7 +4,7 @@
 
 **Modern Web-Based Compiler Frontend Tool for Arithmetic Expression Analysis**
 
-[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://lexical-analyzer-parser-2025.vercel.app)
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://lexical-analyzer-parser-pied.vercel.app/)
 [![Backend API](https://img.shields.io/badge/⚡_API-PythonAnywhere-blue?style=for-the-badge&logo=python)](https://kasnirmana.pythonanywhere.com)
 [![Next.js](https://img.shields.io/badge/Next.js-15.5-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python)](https://www.python.org/)
